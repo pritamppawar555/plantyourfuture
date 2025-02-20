@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024, initial-scale=1.0, user-scalable=no">
+    <title>Search Bar</title>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+  }
+  
+  #search {
+      display: flex;
+      align-items: center;
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 5px;
+  }
+  
+  input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      outline: none;
+  }
+  
+  .fa-search {
+      padding: 10px;
+      font-size: 20px;
+      color: #3498db;
+  }
+<style>
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #search {
+            display: flex;
+            align-items: center;
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 5px;
+        }
+        
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+        }
+        
+        .fa-search {
+            padding: 10px;
+            font-size: 20px;
+            color: #3498db;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #search {
+            display: flex;
+            align-items: center;
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 5px;
+        }
+        
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+        }
+        
+        .fa-search {
+            padding: 10px;
+            font-size: 20px;
+            color: #3498db;
+        }
+                
+</style>  
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div id="search">
+        <i class=" search"></i>
+        <input type="text" id="input" name="searchBox" placeholder="🔍Search Plants For Future">
+    </div>
+
+    <script>
+      document.getElementById("input").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                var searchText = event.target.value.toLowerCase();
+                if (searchText.includes("fruit")) {
+                    window.open("fruits.html");
+                } else if (searchText.includes("html")) {
+                    window.open("html.html", "_blank");
+                } else if (searchText.includes("flower")) {
+                    window.open("flowers.html");
+                } else {
+                    alert("No matching results found.");
+                }
+            }
+        });
+                
+    </script>
+</body>
+</html>

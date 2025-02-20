@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> SLIDER | E-PLANT WEBSITE </title>
+    <!-- EXTERNAL LINKS -->
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <style>
+        body
+        {
+            margin: 0;
+           
+            background-image: url(imgg/ww6);
+            background-size: auto;  
+    
+        }
+
+        
+        #containerSlider
+        {
+            margin: auto;
+            width: 90%;
+            text-align: center;
+            padding-top: 130px;
+            box-sizing: border-box;
+        }
+        #containerSlider img
+        {
+            width: 100%;
+            height: 140%;
+            text-align: center;
+            align-content: center;
+            border-radius: 18%;
+        }
+
+        #slidingimage
+        {
+            width: 150%;
+            height: 190%;
+            text-align: center;
+            align-content: center;
+        }
+
+        #centerImage img
+        {
+            width: 1000px;
+            height: 650px;
+            text-align: center;
+            align-content: center;
+            padding-top: 3px;
+            border-radius: 5%;
+        }
+
+       
+    
+        @media(max-width: 732px)
+        {
+            #containerSlider img
+            {
+                height: 12em;
+            }
+        }
+        @media(max-width: 500px)
+        {
+            #containerSlider img
+            {
+                height: 10em;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <section>
+            <div id="containerSlider">
+                <div id="slidingImage"> <img src="imgg/888.jpg" alt="image1"> </div>
+                <div id="slidingImage"> <img src="imgg/555.jpg" alt="image2"> </div>
+                <div id="slidingImage"> <img src="imgg/666.jpg" alt="image3"> </div>
+                <div id="slidingImage"> <img src="imgg/777.jpg" alt="image4"> </div>
+                <div id="slidingImage"> <img src="imgg/999.jpg" alt="image5"> </div>
+
+                <div id="slidingImage"> <img src="imgg/444.jpg" alt="image6"> </div>
+                <div id="slidingImage"> <img src="imgg/111.jpg" alt="image7"> </div>
+                <div id="slidingImage"> <img src="imgg/222.jpg" alt="image8"> </div>
+                <div id="slidingImage"> <img src="imgg/333.jpg" alt="image9"> </div>
+            </div>
+    </section>
+</body>
+    <!-- <script src=“https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js”></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+        $('#containerSlider').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 800,
+            });
+        });
+    </script>
+
+    
+
+    <center>
+        
+        <div id="centerImage"> <img src="imgg/image_processing20200430-3767-m94dfk.gif" alt="image1"> </div>
+    
+    </center>
+
+  
+
+
+    
+
+</html>
+
+

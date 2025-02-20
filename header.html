@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> HEADER | E-COMMERCE WEBSITE </title>
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <!-- EXTERNAL LINKS -->
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <section>
+            <!-- MAIN CONTAINER -->
+            <div id="container">
+                <!-- SHOP NAME -->
+                <div id="shopName"><a href="index.html"> <img src="imgg/logo.jpg" alt=""></a></div>
+                    <!-- COLLCETIONS ON WEBSITE -->
+                    <div id="collection">
+                        <div id="Flower"><a href="flowers.html"> FLOWERS </a></div>
+                        <div id="Fruit"><a href="fruits.html"> FRUITS  </a></div>
+                        <div id="flower"><a href="flowers.html"> Plants </a></div>
+                        <div id="fruit"><a href="fruits.html"> Plants </a></div>
+
+                        
+                    </div>
+                    <div id="user">
+                       
+
+                    <!-- SEARCH SECTION -->
+                    <div id="search">
+                        <i class="fas fa-search search"></i>
+                        <!--<img src="imgg/search.png" height="50px"width="50px" alt="">-->
+                        <input type="text" id="input" name="searchBox" name="searchBox"
+                         placeholder="🔍Search Plants For Future">
+                         
+                         <script>
+                            document.getElementById("input").addEventListener("keypress", function(event) {
+                                  if (event.key === "Enter") {
+                                      var searchText = event.target.value.toLowerCase();
+                                      if (searchText.includes("fruit")) {
+                                          window.open("fruits.html");
+                                      } else if (searchText.includes("decoration")) {
+                                          window.open("fruits.html");
+                                      } else if (searchText.includes("flower")) {
+                                          window.open("flowers.html");
+                                      } else {
+                                          alert("No matching results found.");
+                                      }
+                                  }
+                              });
+                                      
+                          </script>
+                        
+                    </div>
+                </div>
+                    <!-- USER SECTION (CART AND USER ICON) -->
+                    <div id="user">
+                        <a href="cart.php">
+                            <img src="imgg/cart.png" height="50px"width="50px" style="padding-right: 30px;">
+                        </a>
+                        
+                      
+                        <a href="sign-in-and-sign-up-form-template/index.php"> 
+                            <img src="imgg/profile.png" height="50px"width="40px">
+                        </a>
+                    </div>
+
+                   
+
+
+                    
+            </div>
+
+        </section>
+    </header>
+
+</body>
+</html>

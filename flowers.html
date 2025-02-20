@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=1024, initial-scale=1.0, user-scalable=no">
+      <title>flower</title>
+      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+      <script src="js/jQuery3.4.1.js"></script>
+      <!-- EXTERNAL LINKS -->
+      <link rel="stylesheet" href="css/header.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+    <header>
+        <section>
+            <!-- MAIN CONTAINER -->
+            <div id="container">
+                <!-- SHOP NAME -->
+                <div id="shopName"><a href="index.html"> <img src="imgg/logo.jpg" alt=""></a></div>
+                <!-- COLLCETIONS ON WEBSITE -->
+                <div id="collection">
+                    <div id="Flower"><a href="flowers.html">FLOWERS</a></div>
+                    <div id="Fruit"><a href="fruits.html">FRUITS</a></div>
+                    <div id="flower"><a href="flowers.html">Plants</a></div>
+                    <div id="fruit"><a href="fruits.html">Plants</a></div>
+                </div>
+                <div id="user">
+                    <!-- SEARCH SECTION -->
+                    <div id="search">
+                        <i class="fas fa-search search"></i>
+                        <input type="text" id="input" name="searchBox" placeholder="🔍Search Plants For Future">
+                    </div>
+                </div>
+                <!-- USER SECTION (CART AND USER ICON) -->
+                <div id="user">
+                    <a href="cart.php">
+                        <img src="imgg/cart.png" height="50px" width="50px" style="padding-right: 30px;">
+                    </a>
+                    <a href="sign-in-and-sign-up-form-template\index.php"> 
+                        <img src="imgg/profile.png" height="50px" width="40px">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+     <!-- JavaScript for search functionality -->
+     <script>
+        function toCamelCase(str) {
+            return str.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, function(match, chr) {
+                return chr.toUpperCase();
+            });
+        }
+
+        // Add an event listener to the input element
+        document.getElementById("input").addEventListener("keypress", function(event) {
+            // Check if the pressed key is Enter
+            if (event.key === "Enter") {
+                // Convert input to camel case and trim whitespace
+                var searchText = toCamelCase(this.value.trim());
+
+                // Debugging: Log the input text
+                console.log("Input:", searchText);
+
+                // Switch statement to handle different cases
+                switch (searchText) {
+                    case "fruit":
+                        window.open("fruits.html");
+                        break;
+                    case "decoration":
+                        window.open("decoration.html");
+                        break;
+                    case "flower":
+                        window.open("flowers.html");
+                        break;
+                    case "cart":
+                        window.open("cart.html");
+                        break;
+                    case "profile":
+                        window.open("sign-in-and-sign-up/index.html");
+                        break;
+                    case "delivery":
+                        window.open("delivery.html");
+                        break;
+                    case "support":
+                    case "customer":
+                        window.open("cocare.html");
+                        break;
+                    case "birdOfParadise":
+                        window.open("imgpre.html");
+                        break;
+                    case "hoyaObovatum":
+                        window.open("imgpre1.html");
+                        break;
+                    case "calatheaBeautyStar":
+                        window.open("imgpre2.html");
+                        break;
+                    case "birdnestJapanese":
+                        window.open("imgpre3.html");
+                        break;
+                    case "monsteraDeliciosa":
+                        window.open("imgpre4.html");
+                        break;
+                    case "gardenPlants":
+                        window.open("imgpre5.html");
+                        break;
+                    case "zzPlants":
+                        window.open("imgpre6.html");
+                        break;
+                    case "freshfeelplant":
+                        window.open("imgpre7.html");
+                        break;    
+                    case "americanWallDecor":
+                        window.open("imgpre8.html");
+                        break;
+                    case "cocoBeautyStar":
+                        window.open("imgpre9.html");
+                        break;
+                    case "wallHangout":
+                        window.open("imgpre10.html");
+                        break;
+                    case "decorKing":
+                        window.open("imgpre11.html");
+                        break;
+                    case "roomPlants":
+                        window.open("imgpre12.html");
+                        break;
+                    case "chili":
+                        window.open("imgpre13.html");
+                        break;
+                    case "pinkRose":
+                        window.open("imgpre14.html");
+                        break;
+                    case "MixFlowersPot":
+                        window.open("imgpre15.html");
+                        break;
+                    case "beautyQueen":
+                        window.open("imgpre16.html");
+                        break;
+                    case "redRose":
+                        window.open("imgpre17.html");
+                        break;
+                    case "lovelySymbolic":
+                        window.open("imgpre18.html");
+                        break;
+                    case "whiteRose":
+                        window.open("imgpre19.html");
+                        break;
+                    case "japaneseBeauty":
+                        window.open("imgpre20.html");
+                        break;
+                    case "redFlowerBasket":
+                        window.open("imgpre21.html");
+                        break;  
+                    default:
+                        // Default action when input does not match any case
+                        alert("No matching action found for input: " + searchText);
+                        break;
+                }
+            }
+        });
+    </script>  
+            <!-- <div id="Fruit"><a href="fruits.html"> FRUITS  </a></div> -->
+            <h1> <a href="flowers.html"></a>flowers & decoration plants for home beauty..</h1>
+            <!-- <div id="containerClothing"> -->
+              <!-- <div id="Flower"><a href="flowers.html"> FLOWERS </a></div>/ --> 
+        <center>
+           <main>
+               <section class="product">
+                <a href="imgpre7.html">
+                    
+                    <img src="imgg/fresh.jpeg"  > 
+                </a>
+               
+                   <h2>Fresh feel plant</h2>
+                   <p class="price">🏷️RS-800</p>
+                   <button class="button"> ADD TO CART</button>
+        
+               </section>
+        
+               <section class="product">
+                <a href="imgpre8.html">
+                    
+                    <img src="imgg/d90e3fa61122b973965017c5919f1dc7.jpg" alt="" > 
+                </a>
+                   <h2>American wall decor</h2>
+                   <p class="price">🏷️RS-2000</p>
+                   <button class="button"> ADD TO CART</button>
+        
+               </section>
+        
+               <section class="product">
+                <a href="imgpre9.html">
+                    
+                    <img src="imgg/dd6.webp"  > 
+                </a>
+            
+                   <h2>Coco beauty star</h2>
+                   <p class="price">🏷️RS-500</p>
+                   <button class="button"onclick="addToCart('Coco beauty star', 500)"> ADD TO CART</button>
+                    
+        
+               </section>
+        
+               <section class="product">
+                <a href="imgpre10.html">
+                    
+                    <img src="imgg/dd4.webp" > 
+                </a>
+            
+                   <h2> Wall hangout </h2>
+                   <p class="price">🏷️RS-550</p>
+                   <button class="button"onclick="addToCart(' Wall hangout ', 550)"> ADD TO CART</button>
+                    
+        
+               </section>
+        
+               <section class="product">
+                <a href="imgpre11.html">
+                    
+                    <img src="imgg/dd3.webp" > 
+                </a>
+                   <h2> Decor King </h2>
+                   <p class="price">🏷️RS-900</p>
+                   <button class="button"onclick="addToCart('Decor King ', 900)"> ADD TO CART</button>
+                    
+        
+               </section>
+               <section class="product">
+                <a href="imgpre12.html">
+                    
+                    <img src="imgg/dd1.jpeg"  > 
+                </a>
+                  
+                   <h2>Room Plants</h2>
+                   <p class="price">🏷️RS-600</p>
+                   <button class="button"onclick="addToCart('Room Plants', 600)"> ADD TO CART</button>
+                    
+               </section>
+        
+               <section class="product">
+                <a href="imgpre13.html">
+                    
+                    <img src="imgg/dd5.webp" > 
+                </a>
+                   <h2>Chili</h2>
+                   <p class="price">🏷️RS-400</p>
+                   <button class="button"onclick="addToCart('Chili', 400)"> ADD TO CART</button>
+                    
+               </section>
+           </main>
+        </center>   
+        
+             
+                </div>
+        
+                <h1> Flowers plants for happyness... </h1>
+                    
+                    <!-- <div id="Fruit"><a href="fruits.html"> FRUITS  </a></div> -->
+                    <center>
+                
+                       
+                            <main>
+                                <section class="product">
+                                    <a href="imgpre14.html">
+                    
+                                        <img src="imgg/o1.webp"  > 
+                                    </a>
+                                    <h2>Pink rose</h2>
+                                    <p class="price">🏷️RS-999</p>
+                                    <button class="button"onclick="addToCart('Pink rose', 999)"> ADD TO CART</button>
+                    
+                                </section>
+        
+                                <section class="product">
+                                    <a href="imgpre15.html">
+                    
+                                        <img src="imgg/fresh.jpeg"> 
+                                    </a>
+                                    <h2>Mix flowers Pot</h2>
+                                    <p class="price">🏷️RS-900</p>
+                                    <button class="button"onclick="addToCart('Mix flowers Pot', 900)"> ADD TO CART</button>
+                    
+                                </section>
+        
+                                <section class="product">
+                                    <a href="imgpre16.html">
+                    
+                                        <img src="imgg/o3.webp"  > 
+                                    </a>
+                                    <h2> Beauty Queen </h2>
+                                    <p class="price">🏷️RS-660</p>
+                                    <button class="button"onclick="addToCart(' Beauty Queen ', 660)"> ADD TO CART</button>
+                    
+                                </section>
+        
+                                <section class="product">
+                                    <a href="imgpre17.html">
+                    
+                                        <img src="imgg/o4.webp"  > 
+                                    </a>
+                                    <h2>Red rose</h2>
+                                    <p class="price">🏷️RS-950</p>
+                                    <button class="button"onclick="addToCart('Red rose', 950)"> ADD TO CART</button>
+                    
+                                </section>
+        
+                                <section class="product">
+                                    <a href="imgpre18.html">
+                    
+                                        <img src="imgg/o5.webp"  > 
+                                    </a>
+                                    <h2> Lovely symbolic </h2>
+                                    <p class="price">🏷️RS-580</p>
+                                    <button class="button"onclick="addToCart(' Lovely symbolic ', 580)"> ADD TO CART</button>
+                    
+                                </section>
+        
+                                <section class="product">
+                                    <a href="imgpre19.html">
+                                        <img src="imgg/o7.webp" >
+                                    </a>
+                                    <h2>White rose</h2>
+                                    <p class="price">🏷️RS-650</p>
+                                    <button class="button"onclick="addToCart('White rose', 650)"> ADD TO CART</button>
+                    
+                                </section>
+        
+                                <section class="product">
+                                    <a href="imgpre20.html">
+                    
+                                        <img src="imgg/o6.webp"  > 
+                                    </a>
+                                    <h2> Japanese beauty </h2>
+                                    <p class="price">🏷️RS-440</p>
+                                    <button class="button"onclick="addToCart(' Japanese beauty ', 440)"> ADD TO CART</button>
+                    
+                                </section>
+        
+                                <section class="product">
+                                    <a href="imgpre21.html">
+                    
+                                        <img src="imgg/o8.webp" > 
+                                    </a>
+                                    <h2> Red flower basket </h2>
+                                    <p class="price">🏷️RS-400</p>
+                                    <button class="button"onclick="addToCart(' Red flower basket ', 400)"> ADD TO CART</button>
+                    
+                                </section>
+        
+                            </main>
+                        </center>
+                </div>
+                         
+                
+        
+            </div>
+            <center><button class="btn1"onclick="handleButtonClick()">Go back...</button></center>
+<script>
+    function handleButtonClick() {
+        window.location.href='index.html'
+}
+</script>
+            <!-- FOOTER -->
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+
+<!-- slider JS START -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+    $(document).ready(function()
+    {
+    $('#containerSlider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        });
+    });
+</script>
+<!-- slider JS ENDS -->
+
+<!-- content JS -->
+<script src="content.js"></script>
+
+</html>                                                                                                                  
+
+    </div>
+</body>
+<style>
+
+    body
+        {
+            margin: 0;
+           
+            background-image: url(imgg/ww6);
+            background-size: auto;  
+    
+        }
+        .btn1 {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-bottom: 100px;
+      }
+    h1
+    {
+        width: 90%;
+        margin: auto;
+        padding: 50px 0;
+        letter-spacing: 2px;
+        font-weight: 800;
+        text-transform: capitalize;
+        color: #ffffff;
+        
+    }
+    #containerClothing, #containerAccessories
+    {
+        display: grid;
+        grid-gap: 70px 20px;
+        grid-template-columns: repeat(5, 1fr);
+        width: 90%;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+    #imageFooter
+    {
+        width: 90%;
+        color: white;
+        align-content: center;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 15px 300px;
+        box-sizing: border-box;
+    }
+    
+    main
+    {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .product
+    {
+        height: 450px;
+        width: 80px;
+        flex: 0 1 300px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 3px solid #ccc;
+        text-align: center;
+        border-radius: 5%;
+        box-shadow: 10%;
+       
+        margin: 10px;
+        background-color: hsl(161, 100%, 89%, 60%);
+        border: 1px solid black;
+        margin-bottom: 40px;
+    
+    }
+    
+    .product:hover
+    {
+        
+        background-color:rgba(255, 255, 255, 0.4);
+        border-radius: 15%;
+    
+    }
+    
+    .button{
+        border-radius: 20%;
+        height: 60px;
+        width: 200px;
+        background-color: hsl(180, 100%, 50%,0.8);
+        box-shadow: 10%;
+        margin-bottom: 5px;
+    }
+    .button:hover
+    {
+       background-color: rgb(255, 255, 255);
+     
+    
+    }
+    
+    .product img{
+        width: 200px;
+        height: 260px;
+        max-width: 100%;
+        border-radius: 5%;
+        border: #000000;
+        margin-top: 8px;
+        /* border-style: groove;
+        */
+    
+    
+    }
+    .product img:hover{
+        border-style: dotted;
+        border-radius: 5%;
+    
+    }
+    
+    .price{
+        font-weight: bold,dark;
+        color: #000000;
+        font-size: larger;
+    }
+    
+    
+    #sliddImage
+    {
+        padding-top: 50px;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-inline-start: 20px;
+        /* border-color: black; */
+    }
+    
+    
+    #box 
+    {
+        width: 100%;
+        background-color: white;
+        align-content: center;
+        border-radius: 10px;
+        box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+    }
+    #box:hover
+    {
+        box-shadow: 1px 6px 3px 0 rgb(185, 185, 185);
+    }
+    #containerClothing img
+    {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        
+    }
+    #containerAccessories img
+    {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    #details
+    {
+        padding: 0 15px;
+        text-transform: capitalize;
+    }
+    #box a 
+    {
+        text-decoration: none;
+        color: rgb(29, 29, 29);
+    }
+    h3
+    {
+        font-size: 16px;
+    }
+    h4
+    {
+        font-weight: 100;
+    }
+    h2
+    {
+        color: rgb(3, 94, 94);
+    }
+    h2:hover{
+        color: #e40808;
+    }
+    
+    /* ----------------------------- MEDIA QUERY --------------------------- */
+    
+    @media(max-width: 1070px)
+    {
+        h1
+        {
+            font-size: 25px;
+        }
+        #containerClothing, #containerAccessories
+        {
+            width: 95%;
+            grid-gap: 10px;
+        }
+    }
+    @media(max-width: 850px)
+    {
+        h1 
+        {
+            width: 80%;
+        }
+        #containerClothing, #containerAccessories
+        {
+            display: grid;
+            grid-gap: 70px 20px;
+            grid-template-columns: repeat(3, 1fr);
+            width: 80%;
+        }    
+    }
+    @media(max-width: 650px)
+    {
+        h1
+        {
+            font-size: 20px;
+        }
+        h1 
+        {
+            width: 90%;
+        }
+        #containerClothing, #containerAccessories
+        {
+            width: 90%;
+        }
+    }
+    @media(max-width: 600px)
+    {
+        h1 
+        {
+            width: 70%;
+        }
+        #containerClothing, #containerAccessories
+        {
+            width: 70%;
+        }
+    }
+    @media(max-width: 505px)
+    {
+        h1 
+        {
+            width: 80%;
+        }
+        #containerClothing, #containerAccessories
+        {
+            width: 80%;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+</style>
+</html>

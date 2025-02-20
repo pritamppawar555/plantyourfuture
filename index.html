@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=1024, initial-scale=1.0, user-scalable=no">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <title> PLANT FOR FUTURE | CREATED BY PRITAM PAWAR </title>
+    <!-- header links -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="js/jQuery3.4.1.js"></script>
+    <!-- EXTERNAL LINKS -->
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <section>
+            <!-- MAIN CONTAINER -->
+            <div id="container">
+                <!-- SHOP NAME -->
+                <div id="shopName"><a href="index.html"> <img src="imgg/logo.jpg" alt=""></a></div>
+                <!-- COLLCETIONS ON WEBSITE -->
+                <div id="collection">
+                    <div id="Flower"><a href="flowers.html">FLOWERS</a></div>
+                    <div id="Fruit"><a href="fruits.html">FRUITS</a></div>
+                    <div id="flower"><a href="flowers.html">Plants</a></div>
+                    <div id="fruit"><a href="fruits.html">Plants</a></div>
+                </div>
+                <div id="user">
+                    <!-- SEARCH SECTION -->
+                    <div id="search">
+                        <i class="fas fa-search search"></i>
+                        <input type="text" id="input" name="searchBox" placeholder="🔍Search Plants For Future">
+                    </div>
+                </div>
+                <!-- USER SECTION (CART AND USER ICON) -->
+                <div id="user">
+                    <a href="cart.php">
+                        <img src="imgg/cart.png" height="50px" width="50px" style="padding-right: 30px;">
+                    </a>
+                    <a href="sign-in-and-sign-up-form-template\index.php"> 
+                        <img src="imgg/profile.png" height="50px" width="40px">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- JavaScript for search functionality -->
+    <script>
+        function toCamelCase(str) {
+            return str.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, function(match, chr) {
+                return chr.toUpperCase();
+            });
+        }
+
+        // Add an event listener to the input element
+        document.getElementById("input").addEventListener("keypress", function(event) {
+            // Check if the pressed key is Enter
+            if (event.key === "Enter") {
+                // Convert input to camel case and trim whitespace
+                var searchText = toCamelCase(this.value.trim());
+
+                // Debugging: Log the input text
+                console.log("Input:", searchText);
+
+                // Switch statement to handle different cases
+                switch (searchText) {
+                    case "fruit":
+                        window.open("fruits.html");
+                        break;
+                    case "decoration":
+                        window.open("decoration.html");
+                        break;
+                    case "flower":
+                        window.open("flowers.html");
+                        break;
+                    case "cart":
+                        window.open("cart.html");
+                        break;
+                    case "profile":
+                        window.open("sign-in-and-sign-up-form-template/index.php");
+                        break;
+                    case "delivery":
+                        window.open("delivery.html");
+                        break;
+                    case "support":
+                    case "customer":
+                        window.open("cocare.html");
+                        break;
+                    case "birdOfParadise":
+                        window.open("imgpre.html");
+                        break;
+                    case "hoyaObovatum":
+                        window.open("imgpre1.html");
+                        break;
+                    case "calatheaBeautyStar":
+                        window.open("imgpre2.html");
+                        break;
+                    case "birdnestJapanese":
+                        window.open("imgpre3.html");
+                        break;
+                    case "monsteraDeliciosa":
+                        window.open("imgpre4.html");
+                        break;
+                    case "gardenPlants":
+                        window.open("imgpre5.html");
+                        break;
+                    case "zzPlants":
+                        window.open("imgpre6.html");
+                        break;
+                    case "freshfeelplant":
+                        window.open("imgpre7.html");
+                        break;    
+                    case "americanWallDecor":
+                        window.open("imgpre8.html");
+                        break;
+                    case "cocoBeautyStar":
+                        window.open("imgpre9.html");
+                        break;
+                    case "wallHangout":
+                        window.open("imgpre10.html");
+                        break;
+                    case "decorKing":
+                        window.open("imgpre11.html");
+                        break;
+                    case "roomPlants":
+                        window.open("imgpre12.html");
+                        break;
+                    case "chili":
+                        window.open("imgpre13.html");
+                        break;
+                    case "pinkRose":
+                        window.open("imgpre14.html");
+                        break;
+                    case "MixFlowersPot":
+                        window.open("imgpre15.html");
+                        break;
+                    case "beautyQueen":
+                        window.open("imgpre16.html");
+                        break;
+                    case "redRose":
+                        window.open("imgpre17.html");
+                        break;
+                    case "lovelySymbolic":
+                        window.open("imgpre18.html");
+                        break;
+                    case "whiteRose":
+                        window.open("imgpre19.html");
+                        break;
+                    case "japaneseBeauty":
+                        window.open("imgpre20.html");
+                        break;
+                    case "redFlowerBasket":
+                        window.open("imgpre21.html");
+                        break;  
+                    default:
+                        // Default action when input does not match any case
+                        alert("No matching action found for input: " + searchText);
+                        break;
+                }
+            }
+        });
+    </script>
+    <!-- SLIDER -->
+    <div id="2"></div>
+    <script>
+        load("slider.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(2).innerHTML = req.responseText;
+        }
+    </script>
+
+    <!-- CONTENT SECTION -->
+    <div id="3"></div>
+    <script>
+        load("content.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(3).innerHTML = req.responseText;
+        }
+    </script>
+
+    <!-- FOOTER -->
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+
+<!-- slider JS START -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+    $(document).ready(function()
+    {
+    $('#containerSlider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        });
+    });
+</script>
+<!-- slider JS ENDS -->
+
+<!-- content JS -->
+<script src="content.js"></script>
+
+</html>
