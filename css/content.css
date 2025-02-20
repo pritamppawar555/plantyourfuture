@@ -1,0 +1,308 @@
+body
+{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+#mapFooter h1{
+    color: azure;
+    font-size: xx-large;
+
+}
+
+#mapFooter iframe{
+    border-radius: 3%;
+    width: 1200px;
+    padding-bottom: 20px;
+   
+
+}
+
+#vidFooter iframe{
+    border-radius: 3%;
+    width: 800px;
+    padding-bottom: 2px;
+   
+
+}
+#vidFooter h1{
+    color: azure;
+    font-size: xx-large;
+
+}
+
+ #imageFooter
+{
+    margin-left: 0.6%;
+
+}
+#ssslidImage
+{
+    padding-top: 50px;
+    margin-inline-end: 20px;
+    border-radius: 5%;
+    align-items: center;
+    flex-wrap: wrap;
+    display: grid;
+
+    /* border-color: black; */
+} 
+
+#caption h3{
+    background-color: hsla(276, 77%, 20%, 50%);
+    color: #12e4d3;
+    font-size:x-large;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px;
+    padding-inline: 100px;
+    border-radius: 20%;
+
+}
+
+#caption h1{
+    background-color: hsl(90, 100%, 50%,50%);
+    margin: 40px;
+    padding-inline: 30%;
+    padding:30px;
+    border-radius: 30%;
+
+}
+
+h1
+{
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #ffffff;
+    
+}
+#containerClothing, #containerAccessories
+{
+    display: grid;
+    grid-gap: 70px 20px;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+#imageFooter
+{
+    width: 90%;
+    color: white;
+    align-content: center;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 15px 300px;
+    box-sizing: border-box;
+}
+
+main
+{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product
+{
+    height: 450px;
+    width: 80px;
+    flex: 0 1 300px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 3px solid #ccc;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 10%;
+   
+    margin: 10px;
+    background-color: hsl(161, 100%, 89%, 60%);
+    border: 1px solid black;
+    margin-bottom: 40px;
+
+}
+
+.product:hover
+{
+    
+    background-color:rgba(255, 255, 255, 0.4);
+    border-radius: 15%;
+
+}
+
+.button{
+    border-radius: 20%;
+    height: 60px;
+    width: 200px;
+    background-color: hsl(180, 100%, 50%,0.8);
+    box-shadow: 10%;
+    margin-bottom: 5px;
+}
+.button:hover
+{
+   background-color: rgb(255, 255, 255);
+ 
+
+}
+
+.product img{
+    width: 200px;
+    height: 260px;
+    max-width: 100%;
+    border-radius: 5%;
+    border: #000000;
+    margin-top: 8px;
+    /* border-style: groove;
+    */
+
+
+}
+.product img:hover{
+    border-style: dotted;
+    border-radius: 5%;
+
+}
+
+.price{
+    font-weight: bold,dark;
+    color: #000000;
+    font-size: larger;
+}
+
+
+#sliddImage
+{
+    padding-top: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-inline-start: 20px;
+    /* border-color: black; */
+}
+
+
+#box 
+{
+    width: 100%;
+    background-color: white;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+}
+#box:hover
+{
+    box-shadow: 1px 6px 3px 0 rgb(185, 185, 185);
+}
+#containerClothing img
+{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+#containerAccessories img
+{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#details
+{
+    padding: 0 15px;
+    text-transform: capitalize;
+}
+#box a 
+{
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+h3
+{
+    font-size: 16px;
+}
+h4
+{
+    font-weight: 100;
+}
+h2
+{
+    color: rgb(3, 94, 94);
+}
+h2:hover{
+    color: #e40808;
+}
+
+/* ----------------------------- MEDIA QUERY --------------------------- */
+
+@media(max-width: 1070px)
+{
+    h1
+    {
+        font-size: 25px;
+    }
+    #containerClothing, #containerAccessories
+    {
+        width: 95%;
+        grid-gap: 10px;
+    }
+}
+@media(max-width: 850px)
+{
+    h1 
+    {
+        width: 80%;
+    }
+    #containerClothing, #containerAccessories
+    {
+        display: grid;
+        grid-gap: 70px 20px;
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+    }    
+}
+@media(max-width: 650px)
+{
+    h1
+    {
+        font-size: 20px;
+    }
+    h1 
+    {
+        width: 90%;
+    }
+    #containerClothing, #containerAccessories
+    {
+        width: 90%;
+    }
+}
+@media(max-width: 600px)
+{
+    h1 
+    {
+        width: 70%;
+    }
+    #containerClothing, #containerAccessories
+    {
+        width: 70%;
+    }
+}
+@media(max-width: 505px)
+{
+    h1 
+    {
+        width: 80%;
+    }
+    #containerClothing, #containerAccessories
+    {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
